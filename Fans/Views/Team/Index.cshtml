@@ -1,0 +1,21 @@
+﻿@model List<Team>
+
+<h1>Equipos</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Estadio</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var team in Model)
+		{
+			<tr>
+				<td>@Html.DisplayFor(m=>team.Name)</td>
+				<td>@Html.DisplayFor(m=>team.Stadium)</td>
+			</tr>
+		}
+	</tbody>
+</table>
